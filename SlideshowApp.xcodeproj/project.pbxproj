@@ -12,6 +12,7 @@
 		A265BC201EB13F54002DF2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A265BC1E1EB13F54002DF2A6 /* Main.storyboard */; };
 		A265BC221EB13F54002DF2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A265BC211EB13F54002DF2A6 /* Assets.xcassets */; };
 		A265BC251EB13F54002DF2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A265BC231EB13F54002DF2A6 /* LaunchScreen.storyboard */; };
+		A2DFFFFF1EB2867F0091383A /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFFFFE1EB2867F0091383A /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A265BC211EB13F54002DF2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A265BC241EB13F54002DF2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A265BC261EB13F54002DF2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2DFFFFE1EB2867F0091383A /* ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A265BC1A1EB13F54002DF2A6 /* AppDelegate.swift */,
 				A265BC1C1EB13F54002DF2A6 /* ViewController.swift */,
+				A2DFFFFE1EB2867F0091383A /* ZoomViewController.swift */,
 				A265BC1E1EB13F54002DF2A6 /* Main.storyboard */,
 				A265BC211EB13F54002DF2A6 /* Assets.xcassets */,
 				A265BC231EB13F54002DF2A6 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A265BC1D1EB13F54002DF2A6 /* ViewController.swift in Sources */,
+				A2DFFFFF1EB2867F0091383A /* ZoomViewController.swift in Sources */,
 				A265BC1B1EB13F54002DF2A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				A265BC2B1EB13F54002DF2A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
