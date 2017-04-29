@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     // プロパティ
-    let imageList: [String] = ["inu01", "inu02", "inu03", "inu04", "inu05", "inu06", "inu07", "inu08"]
+    // let imageList: [String] = ["inu01", "inu02", "inu03", "inu04", "inu05", "inu06", "inu07", "inu08"]
+    let imageList: [String] = ["upa01.jpg", "upa02.jpg", "upa03.jpg", "upa04.jpg"]
     var imageListCnt: Int = 0       // 画像の最大個数
     var imageNumber: Int = 0        // 表示画像番号
     var imageName: String = ""      // 受け渡す画像名

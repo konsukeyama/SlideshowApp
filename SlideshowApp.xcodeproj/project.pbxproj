@@ -12,6 +12,10 @@
 		A265BC201EB13F54002DF2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A265BC1E1EB13F54002DF2A6 /* Main.storyboard */; };
 		A265BC221EB13F54002DF2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A265BC211EB13F54002DF2A6 /* Assets.xcassets */; };
 		A265BC251EB13F54002DF2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A265BC231EB13F54002DF2A6 /* LaunchScreen.storyboard */; };
+		A2B473EB1EB5496100102CC1 /* upa04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B473E71EB5496100102CC1 /* upa04.jpg */; };
+		A2B473EC1EB5496100102CC1 /* upa03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B473E81EB5496100102CC1 /* upa03.jpg */; };
+		A2B473ED1EB5496100102CC1 /* upa02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B473E91EB5496100102CC1 /* upa02.jpg */; };
+		A2B473EE1EB5496100102CC1 /* upa01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B473EA1EB5496100102CC1 /* upa01.jpg */; };
 		A2DFFFFF1EB2867F0091383A /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFFFFE1EB2867F0091383A /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		A265BC211EB13F54002DF2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A265BC241EB13F54002DF2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A265BC261EB13F54002DF2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B473E71EB5496100102CC1 /* upa04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upa04.jpg; sourceTree = "<group>"; };
+		A2B473E81EB5496100102CC1 /* upa03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upa03.jpg; sourceTree = "<group>"; };
+		A2B473E91EB5496100102CC1 /* upa02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upa02.jpg; sourceTree = "<group>"; };
+		A2B473EA1EB5496100102CC1 /* upa01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upa01.jpg; sourceTree = "<group>"; };
 		A2DFFFFE1EB2867F0091383A /* ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,10 @@
 				A265BC211EB13F54002DF2A6 /* Assets.xcassets */,
 				A265BC231EB13F54002DF2A6 /* LaunchScreen.storyboard */,
 				A265BC261EB13F54002DF2A6 /* Info.plist */,
+				A2B473E71EB5496100102CC1 /* upa04.jpg */,
+				A2B473E81EB5496100102CC1 /* upa03.jpg */,
+				A2B473E91EB5496100102CC1 /* upa02.jpg */,
+				A2B473EA1EB5496100102CC1 /* upa01.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 				TargetAttributes = {
 					A265BC161EB13F54002DF2A6 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VC5HKC4D7J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,8 +139,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B473EE1EB5496100102CC1 /* upa01.jpg in Resources */,
+				A2B473ED1EB5496100102CC1 /* upa02.jpg in Resources */,
 				A265BC251EB13F54002DF2A6 /* LaunchScreen.storyboard in Resources */,
+				A2B473EC1EB5496100102CC1 /* upa03.jpg in Resources */,
 				A265BC221EB13F54002DF2A6 /* Assets.xcassets in Resources */,
+				A2B473EB1EB5496100102CC1 /* upa04.jpg in Resources */,
 				A265BC201EB13F54002DF2A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VC5HKC4D7J;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.konsukeyama.SlideshowApp;
@@ -276,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VC5HKC4D7J;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.konsukeyama.SlideshowApp;
