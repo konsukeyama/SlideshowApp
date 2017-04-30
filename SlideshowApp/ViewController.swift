@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     // プロパティ
     // let imageList: [String] = ["inu01", "inu02", "inu03", "inu04", "inu05", "inu06", "inu07", "inu08"]
+    // 再提出用の画像
     let imageList: [String] = ["upa01.jpg", "upa02.jpg", "upa03.jpg", "upa04.jpg"]
     var imageListCnt: Int = 0       // 画像の最大個数
     var imageNumber: Int = 0        // 表示画像番号
@@ -48,22 +49,18 @@ class ViewController: UIViewController {
         photoView.image = UIImage(named: imageList[imageNumber])
     }
     
-    // 画像を変更する（true:進む、false:戻る）　※もう少しうまく書けないだろうか...汗
-    func changeImage(upDownFlg: Bool) {
-        if upDownFlg == true {
-            // 進む
-            if imageNumber == (imageListCnt - 1) {
-                imageNumber = 0
-            } else {
-                imageNumber += 1
-            }
-        } else {
-            // 戻る
-            if imageNumber == 0 {
-                imageNumber = (imageListCnt - 1)
-            } else {
-                imageNumber -= 1
-            }
+    // タイマーから diff を受け取り changeImage() へ渡す
+    func getTimerDiff(timer: Timer) {
+        let timerDiff = timer.userInfo as! Dictionary<String, Any>
+        changeImage(diff: timerDiff["diff"] as! Int)
+    }
+    
+    // 画像を変更する（+1:進む、-1:戻る）
+    func changeImage(diff: Int) {
+        imageNumber += diff
+        imageNumber %= imageListCnt // 最大値を上回ったら最小値へ
+        if imageNumber < 0 {
+            imageNumber += imageListCnt // 最小値を下回ったら最大値へ
         }
         imageView()
     }
@@ -76,11 +73,12 @@ class ViewController: UIViewController {
             playbackChange = false
             // タイマー開始
             if self.timer == nil {
+                let userInfo: [String: Int] = ["diff": 1]
                 timer = Timer.scheduledTimer(
                     timeInterval: 2, // 秒単位
                     target: self,
-                    selector: #selector(changeImage),
-                    userInfo: true,
+                    selector: #selector(getTimerDiff),
+                    userInfo: userInfo,
                     repeats: true
                 )
             }
@@ -138,11 +136,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func backButton(_ sender: Any) {
-        changeImage(upDownFlg: false) // 戻る
+        changeImage(diff: -1) // 戻る
     }
 
     @IBAction func nextButton(_ sender: Any) {
-        changeImage(upDownFlg: true) // 進む
+        changeImage(diff: 1) // 進む
     }
 }
 
